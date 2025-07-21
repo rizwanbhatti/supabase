@@ -34,7 +34,7 @@ async function login() {
     console.log(data);
     
     console.log("data", data.session.access_token);
-     window.location.href = `supabase/dashboard.html`;
+     window.location.href = `dashboard.html`;
   }
 }
 
