@@ -38,19 +38,19 @@ async function login() {
   }
 }
 
-async function checkAuth() {
-  const { data:{ session} } = await client.auth.getSession();
+// async function checkAuth() {
+//   const { data:{ session} } = await client.auth.getSession();
 
-  if (!session) {
-    window.location.href = `supabase/index.html`;
-  } else {
-    // console.log(session);
-  }
-}
+//   if (!session) {
+//     window.location.href = `https://rizwanbhatti.github.io/supabase/dashboard.html`;
+//   } else {
+//     // console.log(session);
+//   }
+// }
 
-if (window.location.pathname != `/supabase/index.html`) {
-  checkAuth();
-}
+// if (window.location.pathname != `/supabase/index.html`) {
+//   checkAuth();
+// }
 
 async function logout() {
   const { error } = await client.auth.signOut();
