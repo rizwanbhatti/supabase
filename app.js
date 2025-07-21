@@ -48,7 +48,7 @@ async function checkAuth() {
   }
 }
 
-if (window.location.pathname != `/index.html`) {
+if (window.location.pathname != `/supabase/index.html`) {
   checkAuth();
 }
 
